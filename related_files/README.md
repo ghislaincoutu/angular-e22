@@ -1,4 +1,4 @@
-# angular-e22 &mdash; Test de programmation des fiches grammaticales
+# angular-e22 &mdash; Test de programmation de fiches grammaticales
 Les fichiers se rapportant à l'application qui doivent être installés sur le serveur Web se trouvent dans le sous-répertoire `/releated_files/publication`.
 
 ## Commandes Angular à exécuter pour générer les composants de l'application
@@ -21,7 +21,7 @@ ng generate service module01
 
 ## Ajout d'un fichier JavaScript externe à l'application
 Pour ajouter un fichier JavaScript externe à l'application, il faut spécifier le chemin du fichier externe dans le fichier **angular.json**, dans la section _build_ :
-```
+```js
 "build": {
   ...
     "scripts": [
