@@ -1,0 +1,48 @@
+<div class="description">
+  <h2>Vue liste détaillée</h2>
+  <p>Affichage des fiches grammaticales, vue détaillée</p>
+</div>
+
+<div *ngFor="let x of notions56" [ngSwitch]="x.id">
+  <ng-template ngSwitchCase="aide001">
+    <p class="id01">aide001</p>
+    <app-aide001 class="external-file"></app-aide001>
+  </ng-template>
+  <ng-template ngSwitchCase="aide002">
+    <p class="id01">aide002</p>
+    <app-aide002 class="external-file"></app-aide002>
+  </ng-template>
+  <ng-template ngSwitchCase="aide003">
+    <p class="id01">aide003</p>
+    <app-aide003 class="external-file"></app-aide003>
+  </ng-template>
+  <ng-template ngSwitchCase="aide004">
+    <p class="id01">aide004</p>
+    <app-aide004 class="external-file"></app-aide004>
+  </ng-template>
+  <ng-template ngSwitchCase="gram001">
+    <p class="id01">gram001</p>
+    <app-gram001 class="external-file"></app-gram001>
+  </ng-template>
+  <ng-template ngSwitchCase="gram002">
+    <p class="id01">gram002</p>
+    <app-gram002 class="external-file"></app-gram002>
+  </ng-template>
+  <ng-template ngSwitchCase="phon001">
+    <p class="id01">phon001</p>
+    <app-phon001 class="external-file"></app-phon001>
+  </ng-template>
+  <ng-template ngSwitchCase="phon002">
+    <p class="id01">phon002</p>
+    <app-phon002 class="external-file"></app-phon002>
+  </ng-template>
+</div>
+
+<div class="description spacet01">
+  <h3>liste-detaillee.component.html</h3>
+  <iframe src="assets/code-preview/liste-detaillee/html.txt"></iframe>
+  <h3>liste-detaillee.component.ts</h3>
+  <iframe src="assets/code-preview/liste-detaillee/typescript.txt"></iframe>
+  <h3>module01.service.ts</h3>
+  <iframe src="assets/code-preview/module01/typescript.txt"></iframe>
+</div>
