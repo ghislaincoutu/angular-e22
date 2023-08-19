@@ -22,12 +22,11 @@ ng generate service module01
 ## Ajout d'un fichier JavaScript externe à l'application
 Pour ajouter un fichier JavaScript externe à l'application, il faut spécifier le chemin du fichier externe dans le fichier **angular.json**, dans la section _build_ :
 ```json
-"build": {
-  ...
+{
+  "build": {
     "scripts": [
       "src/assets/js/custom.js"
     ]
-  ...
-  },
+  }
 }
 ```
