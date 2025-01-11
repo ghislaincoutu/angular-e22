@@ -9,7 +9,8 @@ interface Notions55 {
 @Component({
   selector: 'app-liste-detaillee',
   templateUrl: './liste-detaillee.component.html',
-  styleUrls: ['./liste-detaillee.component.scss']
+  styleUrls: ['./liste-detaillee.component.scss'],
+  standalone: false
 })
 export class ListeDetailleeComponent {
   notions81!: Observable<any[]>;
