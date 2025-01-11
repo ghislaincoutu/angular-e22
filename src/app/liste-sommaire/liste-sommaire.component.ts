@@ -5,7 +5,8 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-liste-sommaire',
   templateUrl: './liste-sommaire.component.html',
-  styleUrls: ['./liste-sommaire.component.scss']
+  styleUrls: ['./liste-sommaire.component.scss'],
+  standalone: false
 })
 export class ListeSommaireComponent {
 
