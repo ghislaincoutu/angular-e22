@@ -1,7 +1,7 @@
 # angular-e22
 [README](related_files/README.md) &mdash; Other files related to this programming exercise.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
 
 ## Development server
 
