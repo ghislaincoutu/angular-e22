@@ -3,43 +3,11 @@
   <p>Affichage des fiches grammaticales, vue détaillée</p>
 </div>
 
-@for (x of notions56; track x) {
-  <div>
-    @switch (x.id) {
-      @case (aide001) {
-        <p class="id01">aide001</p>
-        <app-aide001 class="external-file"></app-aide001>
-      }
-      @case (aide002) {
-        <p class="id01">aide002</p>
-        <app-aide002 class="external-file"></app-aide002>
-      }
-      @case (aide003) {
-        <p class="id01">aide003</p>
-        <app-aide003 class="external-file"></app-aide003>
-      }
-      @case (aide004) {
-        <p class="id01">aide004</p>
-        <app-aide004 class="external-file"></app-aide004>
-      }
-      @case (gram001) {
-        <p class="id01">gram001</p>
-        <app-gram001 class="external-file"></app-gram001>
-      }
-      @case (gram002) {
-        <p class="id01">gram002</p>
-        <app-gram002 class="external-file"></app-gram002>
-      }
-      @case (phon001) {
-        <p class="id01">phon001</p>
-        <app-phon001 class="external-file"></app-phon001>
-      }
-      @case (phon002) {
-        <p class="id01">phon002</p>
-        <app-phon002 class="external-file"></app-phon002>
-      }
-    }
-  </div>
+@for (x of (notions81 | async); track x.id) {
+<div>
+  <p class="id01">{{ x.id }}</p>
+  <ng-container [ngComponentOutlet]="componentMap[x.id]"></ng-container>
+</div>
 }
 
 <div class="description spacet01">
