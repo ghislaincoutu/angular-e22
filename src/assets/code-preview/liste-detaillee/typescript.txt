@@ -15,6 +15,14 @@ interface Notions55 {
 export class ListeDetailleeComponent {
   notions81!: Observable<any[]>;
   notions56: Notions55[] = [];
+  aide001: string = '';
+  aide002: string = '';
+  aide003: string = '';
+  aide004: string = '';
+  gram001: string = '';
+  gram002: string = '';
+  phon001: string = '';
+  phon002: string = '';
 
   constructor(private Module01: Module01Service) {
     this.notions56 = [
