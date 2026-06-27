@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   standalone: false
 })
 export class AppComponent {
-  title = 'angular-e22';
+  title = 'angular22';
 }

@@ -1,28 +1,37 @@
-# angular-e22
-[README](related_files/README.md) &mdash; Other files related to this programming exercise.
+# angular-e22 &mdash; Test de programmation de fiches grammaticales
+[README](../README.md) &mdash; Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 21.2.8.
+Les fichiers se rapportant à l'application qui doivent être installés sur le serveur Web se trouvent dans le sous-répertoire `/releated_files/publication`.
 
-## Development server
+## Démonstration
+https://ghislaincoutu.ca/d002/angular-e22
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Commandes Angular à exécuter pour générer les composants de l'application
+```sh
+ng generate environments
+ng generate component accueil
+ng generate component menu
+ng generate component liste-sommaire
+ng generate component liste-detaillee
+ng generate component aide001
+ng generate component aide002
+ng generate component aide003
+ng generate component aide004
+ng generate component gram001
+ng generate component gram002
+ng generate component phon001
+ng generate component phon002
+ng generate service module01
+```
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Ajout d'un fichier JavaScript externe à l'application
+Pour ajouter un fichier JavaScript externe à l'application, il faut spécifier le chemin du fichier externe dans le fichier **angular.json**, dans la section _build_ :
+```json
+{
+  "build": {
+    "scripts": [
+      "src/assets/js/custom.js"
+    ]
+  }
+}
+```
